@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "ModuleTitle": {
+      "type": "text"
+    },
+    "Tabs": {
+      "type": "array",
+      "items": {
+        "fields": {
+          "Title": {
+            "type": "text"
+          },
+          "Description": {
+            "type": "wysihtml"
+          },
+          "Icon": {
+            "type": "icon",
+            "glyphicons": false,
+            "bootstrap": false,
+            "fontawesome": true
+          }
+        }
+      }
+    }
+  }
+}

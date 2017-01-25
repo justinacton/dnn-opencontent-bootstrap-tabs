@@ -1,0 +1,25 @@
+{
+  "fields": {
+    "Layout": {
+      "type": "select",
+      "optionLabels": [
+        "tab",
+        "pill"
+      ]
+    },
+    "IconSize": {
+      "type": "radio",
+      "optionLabels": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "vertical": false
+    },
+    "IconColor": {
+      "type": "text",
+      "helper": "Enter HEX color code (i.e. #ffffff for white)"
+    }
+  }
+}

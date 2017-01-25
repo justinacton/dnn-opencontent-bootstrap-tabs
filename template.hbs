@@ -1,0 +1,21 @@
+<div role="tabpanel">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-{{Settings.Layout}}s" role="tablist">
+        {{#each Tabs}}
+      		<li role="presentation" {{#if @first}}class="active"{{/if}} >
+              <a href="#tab{{../Context.ModuleId}}{{@index}}" aria-controls="tab{{../Context.ModuleId}}{{@index}}" role="tab" data-toggle="{{../Settings.Layout}}">
+                <i class="{{Icon}} {{../Settings.IconSize}} tab-icon" style="color:{{../Settings.IconColor}}"></i>{{Title}}
+              </a>
+      		</li>        
+        {{/each}}
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        {{#each Tabs}}
+        <div role="tabpanel" class="tab-pane {{#if @first}}active{{/if}}" id="tab{{../Context.ModuleId}}{{@index}}">{{Description}}</div>
+        {{/each}}
+    </div>
+
+</div>

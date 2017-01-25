@@ -1,0 +1,62 @@
+{
+  "formfields": [
+    {
+      "fieldname": "Layout",
+      "title": "Layout",
+      "fieldtype": "select",
+      "fieldoptions": [
+        {
+          "value": "tab",
+          "text": "tab"
+        },
+        {
+          "value": "pill",
+          "text": "pill"
+        }
+      ],
+      "advanced": false
+    },
+    {
+      "fieldname": "IconSize",
+      "title": "Icon Size",
+      "fieldtype": "radio",
+      "vertical": false,
+      "fieldoptions": [
+        {
+          "value": "fa-1x",
+          "text": "1"
+        },
+        {
+          "value": "fa-2x",
+          "text": "2"
+        },
+        {
+          "value": "fa-3x",
+          "text": "3"
+        },
+        {
+          "value": "fa-4x",
+          "text": "4"
+        }
+      ],
+      "advanced": true,
+      "required": true,
+      "hidden": false,
+      "default": "2",
+      "dependencies": []
+    },
+    {
+      "fieldname": "IconColor",
+      "title": "Icon Color",
+      "fieldtype": "text",
+      "advanced": true,
+      "required": true,
+      "hidden": false,
+      "default": "#000000",
+      "helper": "Enter HEX color code (i.e. #ffffff for white)",
+      "multilanguage": false,
+      "dependencies": []
+    }
+  ],
+  "formtype": "object"
+}
